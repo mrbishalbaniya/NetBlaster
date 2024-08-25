@@ -10,7 +10,6 @@ Payload Support: Easily include data payloads for POST requests.
 ## 💻 Installation
 To get started, you need Python 3 and the requests library. Install the required dependency using pip:
 
-bash
 pip install requests
 
 ## 📜 Usage
