@@ -10,6 +10,7 @@ Payload Support: Easily include data payloads for POST requests.
 ## 💻 Installation
 To get started, you need Python 3 and the requests library. Install the required dependency using pip:
 
+```bash
 pip install requests
 
 ## 📜 Usage
@@ -17,7 +18,7 @@ Run the script from the command line with the following options:
 
 python NetBlaster.py -u <URL> [-p] [-d <DATA>] [-c <COUNT>]
 
-Command-Line Arguments
+## Command-Line Arguments
 -u, --url (required): The target URL for the requests.
 -p, --post (optional): Use this flag to make POST requests instead of GET.
 -d, --data (optional): Specify the payload data for POST requests.
@@ -26,8 +27,10 @@ Command-Line Arguments
 ## Examples
 Sending 100 GET Requests:
 
+```python
 python NetBlaster.py -u "https://example.com" -c 100
 
 Sending 50 POST Requests with Data:
 
+```python
 python NetBlaster.py -u "https://example.com" -p -d "key1=value1&key2=value2" -c 50
