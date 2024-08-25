@@ -12,11 +12,14 @@ To get started, you need Python 3 and the requests library. Install the required
 
 ```bash
 pip install requests
+```
 
 ## 📜 Usage
 Run the script from the command line with the following options:
 
+```python
 python NetBlaster.py -u <URL> [-p] [-d <DATA>] [-c <COUNT>]
+```
 
 ## Command-Line Arguments
 -u, --url (required): The target URL for the requests.
@@ -29,8 +32,10 @@ Sending 100 GET Requests:
 
 ```python
 python NetBlaster.py -u "https://example.com" -c 100
+```
 
 Sending 50 POST Requests with Data:
 
 ```python
 python NetBlaster.py -u "https://example.com" -p -d "key1=value1&key2=value2" -c 50
+```
