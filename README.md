@@ -26,7 +26,6 @@ python NetBlaster.py -u <URL> [-p] [-d <DATA>] [-c <COUNT>]
 -p, --post (optional): Use this flag to make POST requests instead of GET.
 -d, --data (optional): Specify the payload data for POST requests.
 -c, --count (optional): Define the number of parallel requests (default is 100)
-```
 
 ## Examples
 Sending 100 GET Requests:
