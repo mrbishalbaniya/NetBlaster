@@ -1,41 +1,33 @@
-# NetBlaster
+NetBlaster
+NetBlaster is a powerful Python script designed to send multiple HTTP requests concurrently using multithreading. It supports both GET and POST methods, enabling you to specify the target URL, request method, payload data, and the number of parallel requests.
 
-NetBlaster is a Python script designed to send multiple HTTP requests concurrently using multithreading. It supports both GET and POST requests, allowing users to specify the target URL, request method, payload data, and the number of parallel requests to send.
+🚀 Features
+Concurrent Requests: Efficiently sends multiple HTTP GET and POST requests simultaneously.
+Response Handling: Manages HTTP response codes like 429 (throttling) and 500 (server errors).
+Customizable Parallelism: Configure the number of parallel requests.
+Payload Support: Easily include data payloads for POST requests.
 
-## Features
+💻 Installation
+To get started, you need Python 3 and the requests library. Install the required dependency using pip:
 
-- Sends concurrent HTTP GET and POST requests.
-- Handles HTTP response codes such as 429 (throttling) and 500 (server errors).
-- Configurable number of parallel requests.
-- Option to specify payload data for POST requests.
-
-## Installation
-
-Ensure you have Python and the `requests` library installed:
-
-```bash
 pip install requests
 
-
-Usage
+📜 Usage
 Run the script from the command line with the following options:
 
-bash
-Copy code
 python NetBlaster.py -u <URL> [-p] [-d <DATA>] [-c <COUNT>]
+
 Command-Line Arguments
 -u, --url (required): The target URL for the requests.
--p, --post (optional): Indicates that the request should be a POST request.
--d, --data (optional): The payload data for POST requests.
--c, --count (optional): Number of parallel requests (default is 100).
+-p, --post (optional): Use this flag to make POST requests instead of GET.
+-d, --data (optional): Specify the payload data for POST requests.
+-c, --count (optional): Define the number of parallel requests (default is 100).
+
 Examples
 Sending 100 GET Requests:
 
-bash
-Copy code
 python NetBlaster.py -u "https://example.com" -c 100
+
 Sending 50 POST Requests with Data:
 
-bash
-Copy code
 python NetBlaster.py -u "https://example.com" -p -d "key1=value1&key2=value2" -c 50
