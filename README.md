@@ -21,11 +21,12 @@ Run the script from the command line with the following options:
 python NetBlaster.py -u <URL> [-p] [-d <DATA>] [-c <COUNT>]
 ```
 
-## Command-Line Arguments
+## Command-Line Arguments ```
 -u, --url (required): The target URL for the requests.
 -p, --post (optional): Use this flag to make POST requests instead of GET.
 -d, --data (optional): Specify the payload data for POST requests.
--c, --count (optional): Define the number of parallel requests (default is 100).
+-c, --count (optional): Define the number of parallel requests (default is 100)
+```
 
 ## Examples
 Sending 100 GET Requests:
